@@ -27,7 +27,8 @@
     "react-iterative-flow"
   ],
   "authors": [
-    "Vincent Otchkov <Vincent.D.Otchkov1@aexp.com>"
+    "Vincent Otchkov <Vincent.D.Otchkov1@aexp.com>",
+    "Emit Dutcher <Emit.Dutcher1@aexp.com>"
   ],
   "license": "Apache-2.0",
   "jest": {
