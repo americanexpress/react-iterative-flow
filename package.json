@@ -27,9 +27,6 @@
     "react-iterative-flow"
   ],
   "authors": [
-    "Arivu Arumugam <arivu.arumugam@aexp.com>",
-    "Prasath Pandiyan <Prasath.P.Pandiyan@aexp.com>",
-    "Emit Dutcher <Emit.Dutcher1@aexp.com>",
     "Vincent Otchkov <Vincent.D.Otchkov1@aexp.com>"
   ],
   "license": "Apache-2.0",
