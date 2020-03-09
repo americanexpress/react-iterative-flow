@@ -1,0 +1,67 @@
+{
+  "name": "react-iterative-flow",
+  "version": "1.0.0",
+  "description": "Dependency which provides react components on top of iterative statements like for, do...while, while, break, continue, for...in, for...of.",
+  "files": [
+    "lib"
+  ],
+  "main": "lib",
+  "scripts": {
+    "build": "babel src -d lib --copy-files",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages",
+    "lint": "eslint --ignore-path .eslintignore --ext js,jsx,snap .",
+    "posttest": "npm run lint",
+    "test": "jest",
+    "prepublish": "npm run build",
+    "githook:pre-commit": "npm run test",
+    "githook:commit-msg": "commitlint --edit $GIT_PARAMS"
+  },
+  "keywords": [
+    "loop",
+    "react-loop",
+    "iterations",
+    "react-iterative",
+    "react-iterations",
+    "react-iterative-flow"
+  ],
+  "authors": [
+    "Arivu Arumugam <arivu.arumugam@aexp.com>",
+    "Prasath Pandiyan <Prasath.P.Pandiyan@aexp.com>",
+    "Emit Dutcher <Emit.Dutcher1@aexp.com>",
+    "Vincent Otchkov <Vincent.D.Otchkov1@aexp.com>"
+  ],
+  "license": "Apache-2.0",
+  "jest": {
+    "preset": "amex-jest-preset-react",
+    "testPathIgnorePatterns": [
+      "/storybook"
+    ]
+  },
+  "dependencies": {
+    "prop-types": "^15.5.9",
+    "react": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@storybook/react": "^5.2.5",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "amex-jest-preset-react": "^5.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-amex": "^1.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-to-json": "^3.3.0",
+    "eslint": "^5.0.0",
+    "eslint-config-amex": "^10.0.0",
+    "githook-scripts": "^1.0.1",
+    "jest": "^23.0.0",
+    "react-dom": "^16.11.0",
+    "react-test-renderer": "^16.2.0",
+    "rimraf": "^2.5.2"
+  }
+}
