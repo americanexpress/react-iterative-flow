@@ -7,14 +7,14 @@
   ],
   "main": "lib",
   "scripts": {
-    "build": "babel src -d lib --copy-files",
+    "build": ".node_modules/.bin/babel src -d lib --copy-files",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
     "lint": "eslint --ignore-path .eslintignore --ext js,jsx,snap .",
     "posttest": "npm run lint",
     "test": "jest",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "githook:pre-commit": "npm run test",
     "githook:commit-msg": "commitlint --edit $GIT_PARAMS"
   },
