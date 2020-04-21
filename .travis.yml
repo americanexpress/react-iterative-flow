@@ -3,6 +3,8 @@ node_js:
   - '12'
   - '10'
   - '8'
+before_script:
+  - npm install -g babel-cli babel-preset-amex
 deploy:
   on:
     tags: true

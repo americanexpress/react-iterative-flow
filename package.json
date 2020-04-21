@@ -7,7 +7,7 @@
   ],
   "main": "lib",
   "scripts": {
-    "build": ".node_modules/.bin/babel src -d lib --copy-files",
+    "build": "babel src -d lib --copy-files",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
